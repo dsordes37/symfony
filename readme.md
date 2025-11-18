@@ -28,19 +28,7 @@ Além de entregar uma documentação dos endpoints.
 
 ### Criar um novo projeto
 ```
-symfony new nome_do_projeto --webapp
-```
-
-### Entrar no diretório do projeto
-```
-cd nome_do_projeto
-```
-
-### Instalar o api platform, os bundles de seguraça e o validator
-```
-symfony composer require api
-composer require symfony/validator
-composer require symfony/security-bundle
+symfony new nome_do_projeto --api
 ```
 
 ### Entrar no diretório do projeto
@@ -61,6 +49,12 @@ Essa configuração se altera a depender do banco de dados usado. nesse caso é 
 symfony console doctrine:database:create
 ```
 Cria o banco de dados, baseado na configuração anterior.
+
+### Instalar o maker-bundle
+```
+composer require symfony/maker-bundle --dev
+```
+O maker-bundle torna mais eficiente a criação de entidades e outros componentes do sistema.
 
 ### Criar as entidades
 ```
